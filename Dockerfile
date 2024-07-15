@@ -7,7 +7,7 @@ RUN apk update && apk add --no-cache supervisor ca-certificates && \
 	mkdir /config -p
 
 
-ADD build-dir/${TARGETPLATFORM}/$blacbox_exporter /bin/blackbox_exporter
+ADD build-dir/${TARGETPLATFORM}/blackbox_exporter /bin/blackbox_exporter
 
 COPY config.yaml /config/blackbox.yml
 
