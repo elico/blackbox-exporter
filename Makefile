@@ -14,8 +14,10 @@ start:
 
 stop:
 	docker stop blackbox_exporter
+
 build-test:
 	docker build -t elicro/blackbox-exporter:latest .
+
 build:
 	bash download-latest.sh
 	bash publish.sh
